@@ -10,5 +10,8 @@ package tb_java;
  * @author espadafajar
  */
 public class saranaruangkelas {
+    public void JKP_sarana()
+    {
     
+    }
 }

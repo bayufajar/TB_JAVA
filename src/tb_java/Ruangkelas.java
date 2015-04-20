@@ -10,5 +10,35 @@ package tb_java;
  * @author espadafajar
  */
 public class Ruangkelas {
+    public void Kondisiruangkelas()
+    {
     
+    }
+    
+    
+public void Identitasruangkelas()
+{
+
+}
+
+public void Lingkunganruangkelas()
+{
+
+}
+
+public void Kebersihanruangkelas()
+{
+
+}
+
+public void Kenyamananruangkelas()
+{
+
+}
+
+public void Keamananruangkelas()
+{
+
+}
+
 }

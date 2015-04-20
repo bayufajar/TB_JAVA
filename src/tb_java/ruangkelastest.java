@@ -10,5 +10,8 @@ package tb_java;
  * @author espadafajar
  */
 public class ruangkelastest {
+    public static void main(String[] args)
+    {
     
+    }
 }
