@@ -14,4 +14,9 @@ public class saranaruangkelas {
     {
     
     }
+    
+    public void printdatakelas()
+    {
+    
+    }
 }

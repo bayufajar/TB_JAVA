@@ -41,4 +41,9 @@ public void Keamananruangkelas()
 
 }
 
+public void printdata()
+{
+
+}
+
 }
