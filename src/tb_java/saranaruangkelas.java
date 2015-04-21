@@ -22,6 +22,30 @@ System.out.println("------Lingkungan Ruang Kelas-------");
     int sk = input.nextInt();
     RKS.setJumkontak(sk);
     
+    System.out.print("input kondisi stop kontak : ");
+    String kondsk = input.next();
+    RKS.setKondkontak(kondsk);
+    System.out.print("input posisi stop kontak : ");
+    String posSK = input.next();
+    RKS.setPoskontak(posSK);
+    if(RKS.getJumkontak()>4 && RKS.getKondkontak().equals("baik") && RKS.getPoskontak().equals("samping dosen"))
+    {
+    return;
+    }else{}
+    System.out.print("input jumlah kabel LCD : ");
+    int JKB = input.nextInt();
+    RKS.setKabelLCD(JKB);
+    System.out.print("input kondisi kabel LCD : ");
+    String KKB = input.next();
+    RKS.setKondkabLCD(KKB);
+    System.out.print("input posisi kabel LCD : ");
+    String PKB = input.next();
+    RKS.setPoskabLCD(PKB);
+    if(RKS.getKabelLCD()>=1 && RKS.getKondkabLCD().equals("baik") && RKS.getPoskabLCD().equals("dekat dosen"))
+    {
+        return;
+    }else{}
+     System.out.print("");
     }
     
     public void printdatakelas()
