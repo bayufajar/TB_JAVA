@@ -16,6 +16,7 @@ private String faJur;
 private int panjang;
 private int lebar;
 private int luas;
+private String bentukruang;
 private int jumlah_kursi;
 private int jumlah_pintu;
 private int jumlahjendela;
@@ -729,6 +730,20 @@ private String posCTV;
      */
     public void setPosCTV(String posCTV) {
         this.posCTV = posCTV;
+    }
+
+    /**
+     * @return the bentukruang
+     */
+    public String getBentukruang() {
+        return bentukruang;
+    }
+
+    /**
+     * @param bentukruang the bentukruang to set
+     */
+    public void setBentukruang(String bentukruang) {
+        this.bentukruang = bentukruang;
     }
 
 }
