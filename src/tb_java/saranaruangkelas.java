@@ -45,7 +45,15 @@ System.out.println("------Lingkungan Ruang Kelas-------");
     {
         return;
     }else{}
-     System.out.print("");
+     System.out.print("input jumlah kipas : ");
+     int JKP = input.nextInt();
+     RKS.setJumKipas(JKP);
+     System.out.print("input kondisi kipas : ");
+     String KKP = input.next();
+     RKS.setKondkipas(KKP);
+     System.out.print("input posisi kipas : ");
+     String PKKS = input.next();
+     RKS.setPosKipas(PKKS);
     }
     
     public void printdatakelas()
