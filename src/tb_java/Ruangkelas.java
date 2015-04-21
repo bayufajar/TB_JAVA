@@ -10,6 +10,7 @@ public class Ruangkelas {
     
     ruangkelasetget RKS = new ruangkelasetget();
     Scanner input = new Scanner(System.in); 
+    saranaruangkelas SRK = new saranaruangkelas();
     
     public void Identitasruangkelas()
 {
@@ -56,14 +57,21 @@ public class Ruangkelas {
     int jl = input.nextInt();
     RKS.setJumlahjendela(jl);
     RKS.setRasioluas(RKS.getLuas() / RKS.getJumlah_kursi());
-    
+    if(RKS.getJumlah_pintu()>=2)
+    {
+    SRK.JKP_sarana();
+    }
+    else if(RKS.getJumlah_pintu()>=1)
+    {
+    SRK.JKP_sarana();
+    }
+        System.out.println("");
     }
     
     
 
 public void Lingkunganruangkelas()
 {
-
 }
 
 public void Kebersihanruangkelas()
