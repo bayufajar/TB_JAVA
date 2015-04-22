@@ -54,6 +54,31 @@ System.out.println("------Lingkungan Ruang Kelas-------");
      System.out.print("input posisi kipas : ");
      String PKKS = input.next();
      RKS.setPosKipas(PKKS);
+     System.out.print("input jumlah lampu");
+     int JLP = input.nextInt();
+     RKS.setJumLampu(JLP);
+     System.out.print("kondisi lampu : ");
+     String KLP = input.next();
+     RKS.setKondlampu(KLP);
+     System.out.print("posisi Lampu : ");
+     String PLP = input.next();
+     RKS.setPoslampu(PLP);
+     if(RKS.getJumLampu()>=18 && RKS.getKondlampu().equals("baik") && RKS.getPoslampu().equals("atap"))
+     {
+     return;
+     }else{}
+        System.out.print("Jumlah KIPAS Angin : ");
+        int JKA = input.nextInt();
+        RKS.setJumKipas(JKA);
+        System.out.print("kondisi kipas : ");
+        String baik = input.next();
+        RKS.setKondkipas(baik);
+        System.out.print("posisi kipas : ");
+        String PKA = input.next();
+        RKS.setPosKipas(PKA);
+        
+        
+     
     }
     
     public void printdatakelas()
