@@ -76,7 +76,19 @@ System.out.println("------Lingkungan Ruang Kelas-------");
         System.out.print("posisi kipas : ");
         String PKA = input.next();
         RKS.setPosKipas(PKA);
-        
+        if(RKS.getJumKipas()>=2 && RKS.getKondkipas().equals("baik") && RKS.getPosKipas().equals("atap"))
+        {
+        return;
+        }else{}
+        System.out.print("Jumlah AC : ");
+        int JAC = input.nextInt();
+        RKS.setJumAC(JAC);
+        System.out.print("kondisi AC : ");
+        String KAC = input.next();
+        RKS.setKondAC(KAC);
+        System.out.print("posisi AC : ");
+        String PAC = input.next();
+        RKS.setPosAC(PAC);
         
      
     }
