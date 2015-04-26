@@ -54,7 +54,7 @@ private String posKipas;
 private int jumAC;
 private String kondAC;
 private String posAC;
-private String SSID;
+private int SSID;
 private int bandwith;
 private int jumCCTV;
 private String kondCTV;
@@ -662,19 +662,6 @@ private String posCTV;
         this.posAC = posAC;
     }
 
-    /**
-     * @return the SSID
-     */
-    public String getSSID() {
-        return SSID;
-    }
-
-    /**
-     * @param SSID the SSID to set
-     */
-    public void setSSID(String SSID) {
-        this.SSID = SSID;
-    }
 
     /**
      * @return the bandwith
@@ -744,6 +731,20 @@ private String posCTV;
      */
     public void setBentukruang(String bentukruang) {
         this.bentukruang = bentukruang;
+    }
+
+    /**
+     * @return the SSID
+     */
+    public int getSSID() {
+        return SSID;
+    }
+
+    /**
+     * @param SSID the SSID to set
+     */
+    public void setSSID(int SSID) {
+        this.SSID = SSID;
     }
 
 }

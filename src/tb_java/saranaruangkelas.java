@@ -90,7 +90,36 @@ System.out.println("------Lingkungan Ruang Kelas-------");
         String PAC = input.next();
         RKS.setPosAC(PAC);
         
-     
+        if(RKS.getJumAC()>=1 && RKS.getKondAC().equals("baik") && RKS.getPosAC().equals("dibelakang"))
+        {
+        return;
+        }
+        
+        System.out.print("pilih SSID : \n1. UMM Hotspot \n2. UMM Premium \n3. haji lulung");
+        int pssid = input.nextInt();
+        RKS.setSSID(pssid);
+        System.out.print("besar bandwith : ");
+        int bb = input.nextInt();
+        RKS.setBandwith(bb);
+        
+        if(RKS.getSSID() == 1 )
+        {
+        return;
+        }
+        System.out.print("jumlah CCTV : ");
+        int jctv = input.nextInt();
+        RKS.setJumCCTV(jctv);
+        System.out.print("kondisi CCTV : ");
+        String kctv = input.next();
+        RKS.setKondCTV(kctv);
+        System.out.print("posisi CCTV : ");
+        String pctv = input.next();
+        RKS.setPosCTV(pctv);
+        
+        if(RKS.getJumCCTV()== 2 && RKS.getKondCTV().equals("baik") && RKS.getPosCTV().equals("didepan") && RKS.getPosCTV().equals("dibelakang"))
+        {
+        return;
+        }        
     }
     
     public void printdatakelas()
