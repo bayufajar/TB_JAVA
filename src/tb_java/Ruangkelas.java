@@ -72,21 +72,88 @@ public class Ruangkelas {
 
 public void Lingkunganruangkelas()
 {
+    //pangestu pratama
+     System.out.print("-----LINGKUNGAN RUANG KELAS-----");
+    System.out.println("");
+    System.out.print("Input Kondisi Lantai: ");
+    String lantai = input.next();
+    RKS.setKondlantai(lantai);
+    System.out.print("Input Kondisi Dinding: ");
+    String dinding = input.next();
+    RKS.setKonddinding(dinding);
+    System.out.print("Input Kondisi Atap: ");
+    String atap = input.next();
+    RKS.setKondatap(atap);
+    System.out.print("Input Kondisi Pintu: ");
+    String pintu = input.next();
+    RKS.setKondpintu(pintu);
+    System.out.print("Input Kondisi Jendela: ");
+    String jendela = input.next();
+    RKS.setKondjendela(jendela);
+    System.out.print("Kesimpulan(bersih/kotor) : ");
+    String kesimpulan = input.next();
+    if(kesimpulan.equals("bersih")){
+        Kebersihanruangkelas();
+    }else{
+        Kebersihanruangkelas();
+    }
 }
 
 public void Kebersihanruangkelas()
 {
-
+    //pangestu pratama
+System.out.print("------KEBERSIHAN RUANG KELAS-----");
+    System.out.println("");
+    System.out.print("Input Sirkulasi Udara: ");
+    String udara = input.next();
+    RKS.setSirkudara(udara);
+    System.out.print("Input Nilai Pencahayaan: ");
+    int pch = input.nextInt();
+    RKS.setPencahayaan(pch);
+    System.out.print("Input Kelembapan (%): ");
+    int bab = input.nextInt();
+    RKS.setKelembapan(bab);
+    System.out.print("Input Suhu (celcius): ");
+    int shu = input.nextInt();
+    RKS.setCelcius(shu);
 }
 
 public void Kenyamananruangkelas()
 {
-
+    // pangestu pratama
+System.out.print("-----KENYAMANAN RUANG KELAS-----");
+    System.out.println("");
+    System.out.print("Input Kebisingan: ");
+    String bising = input.next();
+    RKS.setKebisingan(bising);
+    System.out.print("Input Bau: ");
+    String au = input.next();
+    RKS.setBau(au);
+    System.out.print("Input Kebocoran: ");
+    String cor = input.next();
+    RKS.setKebocoran(cor);
+    System.out.print("Input Kerusakan: ");
+    String sak = input.next();
+    RKS.setKerusakan(sak);
+    System.out.print("Input Keausan: ");
+    String aus = input.next();
+    RKS.setKeausan(aus);
 }
 
 public void Keamananruangkelas()
 {
-
+    //pangestu pratama
+System.out.print("-----KENYAMANAN RUANG KELAS-----");
+    System.out.println("");
+    System.out.print("Input Kekokohan: ");
+    String koh = input.next();
+    RKS.setKekohan(koh);
+    System.out.print("Input Kunci Pintu dan Jendela: ");
+    String kun = input.next();
+    RKS.setKPJ(kun);
+    System.out.print("Input Bahaya: ");
+    String bah = input.next();
+    RKS.setBahaya(bah);
 }
 
 public void printdata()
