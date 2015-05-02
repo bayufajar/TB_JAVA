@@ -9,9 +9,7 @@ public class ruangkelastest {
     Ruangkelas Rk = new Ruangkelas();
     saranaruangkelas SRK = new saranaruangkelas();
     Rk.Identitasruangkelas();
-    Rk.Kondisiruangkelas();
-    SRK.JKP_sarana();
-    
+  
     
     Scanner input = new Scanner(System.in);
     System.out.print("lihat hasil? (y/n) : ");
