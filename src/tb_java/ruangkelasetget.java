@@ -10,6 +10,8 @@ package tb_java;
  * @author espadafajar
  */
 public class ruangkelasetget {
+    
+
 private String namaruang;
 private String lokasiruang;
 private String faJur;
@@ -59,7 +61,15 @@ private int bandwith;
 private int jumCCTV;
 private String kondCTV;
 private String posCTV;
-
+private String analisislingkungan;
+ String hasiludara;
+ String hasilcahaya;
+String hasilsuhu;
+String hasillembab;
+String hasilbentukruang;
+String hasilrasioluas;
+String hasilpintu;
+String hasiljendela;
     /**
      * @return the namaruang
      */
@@ -133,16 +143,31 @@ private String posCTV;
     /**
      * @return the luas
      */
-    public int getLuas() {
-        return luas;
+     public int luas(int L){
+       L = panjang * lebar;
+    if(panjang!=lebar)
+    {
+    bentukruang = "persegi panjang";
+    hasilbentukruang = "sesuai";
     }
-
-    /**
-     * @param luas the luas to set
-     */
-    public void setLuas(int luas) {
-        this.luas = luas;
+    
+       return L;
+   }
+     public int rasio(int rl){
+         rasioluas = luas / jumlah_kursi;
+         if (rasioluas >=0.5){
+            hasilrasioluas = "sesuai";
+         }
+    if(jumlah_pintu>=2)
+    {
+    hasilpintu = "sesuai";
     }
+    else if(jumlahjendela>=1)
+    {
+hasiljendela = "sesuai";
+    }
+    return rasio(rl);
+     }
 
     /**
      * @return the jumlah_kursi
@@ -189,17 +214,7 @@ private String posCTV;
     /**
      * @return the rasioluas
      */
-    public int getRasioluas() {
-        return rasioluas;
-    }
-
-    /**
-     * @param rasioluas the rasioluas to set
-     */
-    public void setRasioluas(int rasioluas) {
-        this.rasioluas = rasioluas;
-    }
-
+  
     /**
      * @return the kondisiruang
      */
@@ -747,4 +762,63 @@ private String posCTV;
         this.SSID = SSID;
     }
 
+    /**
+     * @return the analisislingkungan
+     */
+    public String getAnalisislingkungan() {
+        return analisislingkungan;
+    }
+
+    /**
+     * @param analisislingkungan the analisislingkungan to set
+     */
+    public void setAnalisislingkungan(String analisislingkungan) {
+        this.analisislingkungan = analisislingkungan;
+    }
+    
+    public String analisisudara()
+    {
+        if(sirkudara.equals("lancar"))
+        {
+        hasiludara = "sesuai";
+        }
+        else{
+            hasiludara = "tidak sesuai";
+        }
+    return analisisudara();
+    }
+    public int analisiscahaya(){
+        if(pencahayaan >=250 && pencahayaan <=350){
+        hasilcahaya = "sesuai";
+        }
+        else{
+            hasilcahaya = "tidak sesuai";
+        }
+        
+        return analisiscahaya();
+    }
+    public int analisiskelembapan(){
+        
+        if(kelembapan >= 70 && kelembapan<=80)
+        {
+       hasillembab = "sesuai";
+        }
+        else
+        {
+            hasillembab = "tidak sesuai";
+        }
+        return analisiskelembapan();
+    }
+    public int analisissuhu(){
+        
+        if(celcius>=25 && celcius <=35){
+        hasilsuhu = "sesuai";
+       
+        }else{
+            hasilsuhu = "tidak sesuai";
+        }
+        return analisissuhu();
+    }
+
+        
 }

@@ -10,11 +10,9 @@ public class ruangkelastest {
     saranaruangkelas SRK = new saranaruangkelas();
     Rk.Identitasruangkelas();
     Rk.Kondisiruangkelas();
-    Rk.Lingkunganruangkelas();
-    Rk.Kebersihanruangkelas();
-    Rk.Kenyamananruangkelas();
-    Rk.Keamananruangkelas();
     SRK.JKP_sarana();
+    
+    
     Scanner input = new Scanner(System.in);
     System.out.print("lihat hasil? (y/n) : ");
     String pilihan = input.next();

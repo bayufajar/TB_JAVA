@@ -1,5 +1,3 @@
-
-
 package tb_java;
 import java.util.*;
 
@@ -39,15 +37,6 @@ public class Ruangkelas {
     System.out.print("input lebar : ");
     int l = input.nextInt();
     RKS.setLebar(l);
-    RKS.setLuas(RKS.getPanjang() * RKS.getLebar());
-    if(p==l)
-    {
-    RKS.setBentukruang("PERSEGI");
-    }
-    else
-    {
-    RKS.setBentukruang("PERSEGI PANJANG");
-    }
     System.out.print("input jumlah kursi : ");
     int jk = input.nextInt();
     RKS.setJumlah_kursi(jk);
@@ -56,19 +45,11 @@ public class Ruangkelas {
     System.out.print("input jumlah jendela : ");
     int jl = input.nextInt();
     RKS.setJumlahjendela(jl);
-    RKS.setRasioluas(RKS.getLuas() / RKS.getJumlah_kursi());
-    if(RKS.getJumlah_pintu()>=2)
-    {
-    SRK.JKP_sarana();
-    }
-    else if(RKS.getJumlah_pintu()>=1)
-    {
-    SRK.JKP_sarana();
-    }
-        System.out.println("");
-    }
+    System.out.println("");
+    RKS.luas(l*p);
+    RKS.rasio(RKS.luas(l*p)/jl);
     
-    
+    }
 
 public void Lingkunganruangkelas()
 {
@@ -92,12 +73,16 @@ public void Lingkunganruangkelas()
     RKS.setKondjendela(jendela);
     System.out.print("Kesimpulan(bersih/kotor) : ");
     String kesimpulan = input.next();
-    if(kesimpulan.equals("bersih")){
+    RKS.setAnalisislingkungan(kesimpulan);
+}
+    public String analisislingkungan(){
+    if(RKS.getAnalisislingkungan().equals("bersih")){
         Kebersihanruangkelas();
     }else{
         Kebersihanruangkelas();
+    }    
+        return analisislingkungan();
     }
-}
 
 public void Kebersihanruangkelas()
 {
@@ -106,17 +91,22 @@ System.out.print("------KEBERSIHAN RUANG KELAS-----");
     System.out.println("");
     System.out.print("Input Sirkulasi Udara: ");
     String udara = input.next();
+    RKS.analisisudara();
     RKS.setSirkudara(udara);
     System.out.print("Input Nilai Pencahayaan: ");
     int pch = input.nextInt();
+    RKS.analisiscahaya();
     RKS.setPencahayaan(pch);
     System.out.print("Input Kelembapan (%): ");
     int bab = input.nextInt();
     RKS.setKelembapan(bab);
+    RKS.analisiskelembapan();
     System.out.print("Input Suhu (celcius): ");
     int shu = input.nextInt();
     RKS.setCelcius(shu);
+    RKS.analisissuhu();
 }
+
 
 public void Kenyamananruangkelas()
 {
