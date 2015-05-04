@@ -1,11 +1,8 @@
 package tb_java;
 import java.util.*;
 
-
-
 public class Ruangkelas {
-
-    
+  
     ruangkelasetget RKS = new ruangkelasetget();
     Scanner input = new Scanner(System.in); 
     saranaruangkelas SRK = new saranaruangkelas();
@@ -23,7 +20,7 @@ public class Ruangkelas {
     System.out.print("input Fa/jurusan : ");
     String d = input.next();
     RKS.setFaJur(d);
-        System.out.println("");
+    System.out.println("");
 
 }
 
@@ -116,34 +113,42 @@ System.out.print("-----KENYAMANAN RUANG KELAS-----");
     System.out.print("Input Kebisingan: ");
     String bising = input.next();
     RKS.setKebisingan(bising);
+    RKS.analisiskebisingan();
     System.out.print("Input Bau: ");
     String au = input.next();
     RKS.setBau(au);
+    RKS.analisisbau();
     System.out.print("Input Kebocoran: ");
     String cor = input.next();
     RKS.setKebocoran(cor);
+    RKS.analisiskebocoran();
     System.out.print("Input Kerusakan: ");
     String sak = input.next();
     RKS.setKerusakan(sak);
+    RKS.analisiskerusakan();
     System.out.print("Input Keausan: ");
     String aus = input.next();
     RKS.setKeausan(aus);
+    RKS.analisiskeausan();
 }
 
 public void Keamananruangkelas()
 {
     //pangestu pratama
-System.out.print("-----KENYAMANAN RUANG KELAS-----");
+System.out.print("-----KEAMANAN RUANG KELAS-----");
     System.out.println("");
     System.out.print("Input Kekokohan: ");
     String koh = input.next();
     RKS.setKekohan(koh);
+    RKS.analisiskekokohan();
     System.out.print("Input Kunci Pintu dan Jendela: ");
     String kun = input.next();
     RKS.setKPJ(kun);
+    RKS.analisiskpj();
     System.out.print("Input Bahaya: ");
     String bah = input.next();
     RKS.setBahaya(bah);
+    RKS.analisiskeamanan();
 }
 
 public void printdata()

@@ -70,6 +70,15 @@ String hasilbentukruang;
 String hasilrasioluas;
 String hasilpintu;
 String hasiljendela;
+String hasilkebisingan;
+String hasilbau;
+String hasilkebocoran;
+String hasilkerusakan;
+String hasilkeausan;
+String hasilkokoh;
+String hasilkpj;
+String hasilkeamanan;
+
     /**
      * @return the namaruang
      */
@@ -819,6 +828,59 @@ hasiljendela = "sesuai";
         }
         return analisissuhu();
     }
-
+    
+    public String analisiskebisingan(){
+        if(kebisingan.equals("tidak bising")){
+            hasilkebisingan ="sesuai";
+        }
+        return analisiskebisingan();
+    }
+    
+    public String analisisbau(){
+        if(bau.equals("tidak bau")){
+            hasilbau = "sesuai";
+        }
+        return analisisbau();
+    }
+    
+    public String analisiskebocoran(){
         
+        if(kebocoran.equals("tidak bocor")){
+            hasilkebocoran = "tidak bocor";
+        }
+        return analisiskebocoran();
+    }
+    
+    public String analisiskerusakan(){
+        if(kerusakan.equals("tidak rusak")){
+            hasilkerusakan = "sesuai";
+        }
+        return analisiskerusakan();
+    }
+    public String analisiskeausan(){
+        if(keausan.equals("tidak aus")){
+            hasilkeausan = "sesuai";
+        }
+        
+        return analisiskeausan();
+    }
+    public String analisiskekokohan(){
+        if(kekohan.equals("kokoh")){
+            hasilkokoh = "sesuai";
+        }
+    
+        return analisiskekokohan();
+            }
+    public String analisiskpj(){
+        if(KPJ.equals("ada")){
+            hasilkpj = "sesuai";
+        }
+        return analisiskpj();
+    }    
+    public String analisiskeamanan(){
+        if(bahaya.equals("aman")){
+            hasilkeamanan = "sesuai";
+        }
+       return analisiskeamanan();
+    }
 }
