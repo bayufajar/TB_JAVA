@@ -10,13 +10,15 @@ package tb_java;
  * @author GMN
  */
 public class IndukKelas {
+  
     public void jumlah (){
         System.out.println("jumlah ");
     }
+    
     public void kondisi(){
-        
+        System.out.println("baik");
     }
     public void posisi(){
-        
+        System.out.println("didepan");
     }
 }
