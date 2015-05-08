@@ -9,7 +9,7 @@ package tb_java;
  *
  * @author GMN
  */
-public class IndukKelas {
+public class Subsaranaruangkelas {
     public void jumlah (){
         System.out.println("jumlah ");
     }
