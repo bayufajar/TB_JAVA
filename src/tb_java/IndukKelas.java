@@ -9,14 +9,16 @@ package tb_java;
  *
  * @author GMN
  */
-public class Subsaranaruangkelas {
+public class IndukKelas {
     public void jumlah (){
-        System.out.println("jumlah ");
+        System.out.print("jumlah ");
     }
     public void kondisi(){
+        System.out.println("kondisi");
         
     }
     public void posisi(){
-        
+        System.out.println("posisi");
     }
+    
 }
