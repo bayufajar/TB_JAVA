@@ -175,7 +175,7 @@ String hasilkeamanan;
     {
 hasiljendela = "sesuai";
     }
-    return rasio(rl);
+    return rl;
      }
 
     /**
@@ -785,18 +785,8 @@ hasiljendela = "sesuai";
         this.analisislingkungan = analisislingkungan;
     }
     
-    public String analisisudara()
-    {
-        if(sirkudara.equals("lancar"))
-        {
-        hasiludara = "sesuai";
-        }
-        else{
-            hasiludara = "tidak sesuai";
-        }
-    return analisisudara();
-    }
-    public int analisiscahaya(){
+   
+    public int analisiscahaya(int cah){
         if(pencahayaan >=250 && pencahayaan <=350){
         hasilcahaya = "sesuai";
         }
@@ -804,9 +794,9 @@ hasiljendela = "sesuai";
             hasilcahaya = "tidak sesuai";
         }
         
-        return analisiscahaya();
+        return cah;
     }
-    public int analisiskelembapan(){
+    public int analisiskelembapan(int kel){
         
         if(kelembapan >= 70 && kelembapan<=80)
         {
@@ -816,9 +806,9 @@ hasiljendela = "sesuai";
         {
             hasillembab = "tidak sesuai";
         }
-        return analisiskelembapan();
+        return kel;
     }
-    public int analisissuhu(){
+    public int analisissuhu(int suh){
         
         if(celcius>=25 && celcius <=35){
         hasilsuhu = "sesuai";
@@ -826,21 +816,21 @@ hasiljendela = "sesuai";
         }else{
             hasilsuhu = "tidak sesuai";
         }
-        return analisissuhu();
+        return suh;
     }
     
     public String analisiskebisingan(){
         if(kebisingan.equals("tidak bising")){
             hasilkebisingan ="sesuai";
         }
-        return analisiskebisingan();
+        return null;
     }
     
     public String analisisbau(){
         if(bau.equals("tidak bau")){
             hasilbau = "sesuai";
         }
-        return analisisbau();
+        return null;
     }
     
     public String analisiskebocoran(){
@@ -848,39 +838,50 @@ hasiljendela = "sesuai";
         if(kebocoran.equals("tidak bocor")){
             hasilkebocoran = "tidak bocor";
         }
-        return analisiskebocoran();
+        return null;
     }
     
     public String analisiskerusakan(){
         if(kerusakan.equals("tidak rusak")){
             hasilkerusakan = "sesuai";
         }
-        return analisiskerusakan();
+        return null;
     }
     public String analisiskeausan(){
         if(keausan.equals("tidak aus")){
             hasilkeausan = "sesuai";
         }
         
-        return analisiskeausan();
+        return null;
     }
     public String analisiskekokohan(){
         if(kekohan.equals("kokoh")){
             hasilkokoh = "sesuai";
         }
     
-        return analisiskekokohan();
+        return null;
             }
     public String analisiskpj(){
         if(KPJ.equals("ada")){
             hasilkpj = "sesuai";
         }
-        return analisiskpj();
+        return null;
     }    
     public String analisiskeamanan(){
         if(bahaya.equals("aman")){
             hasilkeamanan = "sesuai";
         }
-       return analisiskeamanan();
+       return null;
     }
+    public String analisisudara(String udaraa) {
+     if(sirkudara.equals("bersih"))
+        {
+        hasiludara = "sesuai";
+        }
+        else{
+            hasiludara = "tidak sesuai";
+        }   
+     return null;
+    }
+
 }

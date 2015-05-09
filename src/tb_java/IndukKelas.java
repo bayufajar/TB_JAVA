@@ -12,7 +12,7 @@ package tb_java;
 public class IndukKelas {
   
     public void jumlah (){
-        System.out.println("jumlah ");
+        System.out.println("80");
     }
     
     public void kondisi(){
