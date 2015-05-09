@@ -2,7 +2,7 @@ package tb_java;
 
 import java.util.*;
 
-public class saranaruangkelas {
+public class saranaruangkelas extends IndukKelas {
 
     Scanner input = new Scanner(System.in);
     ruangkelasetget RKS = new ruangkelasetget();
