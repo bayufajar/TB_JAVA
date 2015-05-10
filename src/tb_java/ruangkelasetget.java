@@ -9,7 +9,7 @@ package tb_java;
  *
  * @author espadafajar
  */
-public class ruangkelasetget {
+public class ruangkelasetget extends IndukKelas {
     
 
 private String namaruang;
@@ -153,8 +153,9 @@ String hasilkeamanan;
      * @return the luas
      */
      public int luas(int L){
-       L = panjang * lebar;
-    if(panjang!=lebar)
+        
+       L = this.panjang * this.lebar;
+    if(this.panjang!=this.lebar)
     {
     bentukruang = "persegi panjang";
     hasilbentukruang = "sesuai";
@@ -162,9 +163,10 @@ String hasilkeamanan;
     
        return L;
    }
-     public int rasio(int rl){
-         rasioluas = luas / jumlah_kursi;
-         if (rasioluas >=0.5){
+     
+     public int rasioluas(int rl){
+         this.rasioluas = this.luas / this.jumlah_kursi;
+         if (this.rasioluas >=0.5){
             hasilrasioluas = "sesuai";
          }
     if(jumlah_pintu>=2)
@@ -175,6 +177,7 @@ String hasilkeamanan;
     {
 hasiljendela = "sesuai";
     }
+    
     return rl;
      }
 

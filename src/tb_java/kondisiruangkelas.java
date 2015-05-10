@@ -35,6 +35,6 @@ public class kondisiruangkelas {
     RKS.setJumlahjendela(jl);
     System.out.println("");
     RKS.luas(l*p);
-    RKS.rasio(RKS.luas(l*p)/jl);
+    RKS.rasioluas(RKS.luas(l*p)/jl);
     }
 }

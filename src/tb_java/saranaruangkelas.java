@@ -8,19 +8,20 @@ public class saranaruangkelas extends IndukKelas {
     ruangkelasetget RKS = new ruangkelasetget();
 
     public void JKP_sarana() {
-
+  
         System.out.println("------Lingkungan Ruang Kelas-------");
         System.out.println("");
         System.out.print("input jumlah stop kontak : ");
         int sk = input.nextInt();
         RKS.setJumkontak(sk);
-
+        super.kondisi();
         System.out.print("input kondisi stop kontak : ");
         String kondsk = input.next();
         RKS.setKondkontak(kondsk);
         System.out.print("input posisi stop kontak : ");
         String posSK = input.next();
         RKS.setPoskontak(posSK);
+        super.posisi();
         if (RKS.getJumkontak() > 4 && RKS.getKondkontak().equals("baik") && RKS.getPoskontak().equals("samping dosen")) {
             return;
         } else {

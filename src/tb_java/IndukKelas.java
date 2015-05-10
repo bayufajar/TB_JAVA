@@ -11,27 +11,27 @@ package tb_java;
  */
 public class IndukKelas {
   
-    public void jumlah (){
-<<<<<<< HEAD
-        System.out.println("80");
-=======
-        System.out.print("jumlah ");
->>>>>>> origin/TB-JAVA
+    public void luas(){
+        System.out.println("tidak terdefinisi");
     }
-    
+  
+        public void rasioluas(){
+            System.out.println("tidak terdefinisi");
+        }
     public void kondisi(){
-<<<<<<< HEAD
+
         System.out.println("kondisi");
         
     }
     public void posisi(){
         System.out.println("posisi");
-=======
-        System.out.println("baik");
     }
-    public void posisi(){
-        System.out.println("didepan");
->>>>>>> origin/TB-JAVA
-    }
+
+    
+       
+    
+
+   
+   
     
 }
