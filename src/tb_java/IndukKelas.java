@@ -20,7 +20,7 @@ public class IndukKelas {
         }
     public void kondisi(){
 
-        System.out.println("kondisi");
+        System.out.println("baik");
         
     }
     public void posisi(){

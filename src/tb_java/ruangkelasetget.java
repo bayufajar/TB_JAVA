@@ -28,6 +28,7 @@ private String kondpintu;
 private String kondjendela;
 private String konddinding;
 private String kondatap;
+
 private String kondlantai;
 private String sirkudara;
 private int pencahayaan;

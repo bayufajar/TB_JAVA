@@ -2,11 +2,11 @@ package tb_java;
 
 import java.util.*;
 
-public class saranaruangkelas extends IndukKelas {
+public class saranaruangkelas{
 
     Scanner input = new Scanner(System.in);
     ruangkelasetget RKS = new ruangkelasetget();
-
+    IndukKelas fpol = new forpolimorfis();
     public void JKP_sarana() {
   
         System.out.println("------Lingkungan Ruang Kelas-------");
@@ -14,17 +14,19 @@ public class saranaruangkelas extends IndukKelas {
         System.out.print("input jumlah stop kontak : ");
         int sk = input.nextInt();
         RKS.setJumkontak(sk);
-        super.kondisi();
+       
         System.out.print("input kondisi stop kontak : ");
         String kondsk = input.next();
         RKS.setKondkontak(kondsk);
+        fpol.kondisi();
         System.out.print("input posisi stop kontak : ");
         String posSK = input.next();
         RKS.setPoskontak(posSK);
-        super.posisi();
-        if (RKS.getJumkontak() > 4 && RKS.getKondkontak().equals("baik") && RKS.getPoskontak().equals("samping dosen")) {
+       fpol.posisi();
+        if (RKS.getJumkontak() > 4 && RKS.getKondkontak().equals("baik") && RKS.getPoskontak().equals("dekat dosen")) {
             return;
         } else {
+        
         }
         System.out.print("input jumlah kabel LCD : ");
         int JKB = input.nextInt();
@@ -32,9 +34,11 @@ public class saranaruangkelas extends IndukKelas {
         System.out.print("input kondisi kabel LCD : ");
         String KKB = input.next();
         RKS.setKondkabLCD(KKB);
+        fpol.kondisi();
         System.out.print("input posisi kabel LCD : ");
         String PKB = input.next();
         RKS.setPoskabLCD(PKB);
+        fpol.posisi();
         if (RKS.getKabelLCD() >= 1 && RKS.getKondkabLCD().equals("baik") && RKS.getPoskabLCD().equals("dekat dosen")) {
             return;
         } else {
@@ -60,6 +64,7 @@ public class saranaruangkelas extends IndukKelas {
         if (RKS.getJumLampu() >= 18 && RKS.getKondlampu().equals("baik") && RKS.getPoslampu().equals("atap")) {
             return;
         } else {
+            
         }
         System.out.print("Jumlah KIPAS Angin : ");
         int JKA = input.nextInt();
@@ -113,7 +118,5 @@ public class saranaruangkelas extends IndukKelas {
         }
     }
 
-    public void printdatakelas() {
-
-    }
+  
 }
