@@ -22,4 +22,5 @@ public class identitaskelas {
     RKS.setFaJur(d);
     System.out.println("");
     }
+    
 }

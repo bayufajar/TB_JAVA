@@ -7,6 +7,8 @@ public class saranaruangkelas{
     Scanner input = new Scanner(System.in);
     ruangkelasetget RKS = new ruangkelasetget();
     IndukKelas fpol = new forpolimorfis();
+    IndukKelas a = new depanCCTV();
+    IndukKelas b = new belakangCCTV();
     public void JKP_sarana() {
   
         System.out.println("------Lingkungan Ruang Kelas-------");
@@ -110,9 +112,10 @@ public class saranaruangkelas{
         String kctv = input.next();
         RKS.setKondCTV(kctv);
         System.out.print("posisi CCTV : ");
-        String pctv = input.next();
-        RKS.setPosCTV(pctv);
-
+        System.out.println("1. ");a.posisi();
+        System.out.println("2. ");b.posisi();
+        String pos = input.next();
+        RKS.setPosCTV(posSK);
         if (RKS.getJumCCTV() == 2 && RKS.getKondCTV().equals("baik") && RKS.getPosCTV().equals("didepan") && RKS.getPosCTV().equals("dibelakang")) {
             return;
         }

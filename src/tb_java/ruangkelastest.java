@@ -12,6 +12,7 @@ public class ruangkelastest{
        kenyamananruangkelas kenyrk = new kenyamananruangkelas();
        keamananruangkelas keamanan = new keamananruangkelas();
        lingkunganruangkelas lrk = new lingkunganruangkelas();
+    
        
        ik.identitaskelas();
        kork.kondisiruangkelas();

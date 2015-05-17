@@ -26,12 +26,6 @@ public class IndukKelas {
     public void posisi(){
         System.out.println("posisi");
     }
-
-    
-       
-    
-
-   
-   
-    
+  
+ 
 }
