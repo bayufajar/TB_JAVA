@@ -71,4 +71,5 @@ public class identitaskelas extends JPanel {
     //RKS.setFaJur(d);
     //System.out.println("");
     }
+    
 }

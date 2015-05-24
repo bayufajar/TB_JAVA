@@ -83,6 +83,7 @@ public class ruangkelastest extends JFrame{
        kenyamananruangkelas kenyrk = new kenyamananruangkelas();
        keamananruangkelas keamanan = new keamananruangkelas();
        lingkunganruangkelas lrk = new lingkunganruangkelas();
+    
        
      //  ik.identitaskelas();
    //    kork.kondisiruangkelas();

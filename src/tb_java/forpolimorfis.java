@@ -9,3 +9,4 @@ public class forpolimorfis implements indukinterface{
         System.out.println("dekat dosen");
     }
 }
+

@@ -16,5 +16,9 @@ public abstract class IndukKelas {
         abstract int rasioluas();
         
 
-    
+   
+
+  
+ 
+
 }
