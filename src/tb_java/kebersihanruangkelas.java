@@ -6,18 +6,17 @@
 package tb_java;
 
 import java.util.Scanner;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 
-/**
- *
- * @author espadafajar
- */
-public class kebersihanruangkelas {
+
+public class kebersihanruangkelas extends JPanel{
+    
     ruangkelasetget RKS = new ruangkelasetget();
     Scanner input = new Scanner(System.in); 
     saranaruangkelas SRK = new saranaruangkelas();
     
-    
-   
     public void kebersihanruangkelas(){
     System.out.print("------KEBERSIHAN RUANG KELAS-----");
     System.out.println("");

@@ -7,11 +7,11 @@ package tb_java;
 
 import java.util.Scanner;
 
-/**
- *
- * @author espadafajar
- */
-public class kenyamananruangkelas {
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class kenyamananruangkelas extends JPanel{
     
     ruangkelasetget RKS = new ruangkelasetget();
     Scanner input = new Scanner(System.in); 

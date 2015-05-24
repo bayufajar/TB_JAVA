@@ -5,16 +5,9 @@
  */
 package tb_java;
 
-/**
- *
- * @author GMN
- */
-public abstract class IndukKelas {
-  
-    abstract int luas();
-  
-        abstract int rasioluas();
-        
 
-    
+public interface indukinterface {
+  
+    public void kondisi();
+    public void posisi();
 }

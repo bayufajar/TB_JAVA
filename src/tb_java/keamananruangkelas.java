@@ -6,12 +6,12 @@
 package tb_java;
 
 import java.util.Scanner;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 
-/**
- *
- * @author espadafajar
- */
-public class keamananruangkelas {
+
+public class keamananruangkelas extends JPanel {
     ruangkelasetget RKS = new ruangkelasetget();
     Scanner input = new Scanner(System.in); 
     saranaruangkelas SRK = new saranaruangkelas();

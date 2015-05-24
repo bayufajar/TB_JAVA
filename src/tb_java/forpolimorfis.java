@@ -1,7 +1,7 @@
 
 package tb_java;
 
-public class forpolimorfis extends IndukKelas{
+public class forpolimorfis implements indukinterface{
     public void kondisi(){
         System.out.println("Baik");
     }

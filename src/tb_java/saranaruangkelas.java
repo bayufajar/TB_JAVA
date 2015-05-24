@@ -1,12 +1,15 @@
 package tb_java;
 
 import java.util.*;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 
-public class saranaruangkelas{
+public class saranaruangkelas extends JPanel {
 
     Scanner input = new Scanner(System.in);
     ruangkelasetget RKS = new ruangkelasetget();
-    IndukKelas fpol = new forpolimorfis();
+    indukinterface iif = new forpolimorfis();
     public void JKP_sarana() {
   
         System.out.println("------Lingkungan Ruang Kelas-------");
@@ -18,11 +21,11 @@ public class saranaruangkelas{
         System.out.print("input kondisi stop kontak : ");
         String kondsk = input.next();
         RKS.setKondkontak(kondsk);
-        fpol.kondisi();
+        iif.kondisi();
         System.out.print("input posisi stop kontak : ");
         String posSK = input.next();
         RKS.setPoskontak(posSK);
-       fpol.posisi();
+       iif.posisi();
         if (RKS.getJumkontak() > 4 && RKS.getKondkontak().equals("baik") && RKS.getPoskontak().equals("dekat dosen")) {
             return;
         } else {
@@ -34,11 +37,11 @@ public class saranaruangkelas{
         System.out.print("input kondisi kabel LCD : ");
         String KKB = input.next();
         RKS.setKondkabLCD(KKB);
-        fpol.kondisi();
+        iif.kondisi();
         System.out.print("input posisi kabel LCD : ");
         String PKB = input.next();
         RKS.setPoskabLCD(PKB);
-        fpol.posisi();
+        iif.posisi();
         if (RKS.getKabelLCD() >= 1 && RKS.getKondkabLCD().equals("baik") && RKS.getPoskabLCD().equals("dekat dosen")) {
             return;
         } else {

@@ -88,7 +88,8 @@ String hasilkeamanan;
     }
 
     /**
-     * @param namaruang the namaruang to set
+     * @param namaruang the namaruang
+     * to set
      */
     public void setNamaruang(String namaruang) {
         this.namaruang = namaruang;
@@ -150,37 +151,7 @@ String hasilkeamanan;
         this.lebar = lebar;
     }
 
-    /**
-     * @return the luas
-     */
-     public int luas(int L){
-        
-       L = this.panjang * this.lebar;
-    if(this.panjang!=this.lebar)
-    {
-    bentukruang = "persegi panjang";
-    hasilbentukruang = "sesuai";
-    }
-    
-       return L;
-   }
-     
-     public int rasioluas(int rl){
-         this.rasioluas = this.luas / this.jumlah_kursi;
-         if (this.rasioluas >=0.5){
-            hasilrasioluas = "sesuai";
-         }
-    if(jumlah_pintu>=2)
-    {
-    hasilpintu = "sesuai";
-    }
-    else if(jumlahjendela>=1)
-    {
-hasiljendela = "sesuai";
-    }
-    
-    return rl;
-     }
+  
 
     /**
      * @return the jumlah_kursi
@@ -886,6 +857,36 @@ hasiljendela = "sesuai";
             hasiludara = "tidak sesuai";
         }   
      return null;
+    }
+
+    @Override
+    int luas() {
+            
+       int L = this.panjang * this.lebar;
+    if(this.panjang!=this.lebar)
+    {
+    bentukruang = "persegi panjang";
+    hasilbentukruang = "sesuai";
+    }
+    return L;
+     }
+
+    @Override
+    int rasioluas() {
+    this.rasioluas = this.luas / this.jumlah_kursi;
+         if (this.rasioluas >=0.5){
+            hasilrasioluas = "sesuai";
+        }
+    if(jumlah_pintu>=2)
+    {
+    hasilpintu = "sesuai";
+    }
+    else if(jumlahjendela>=1)
+    {
+    hasiljendela = "sesuai";
+    }
+    
+   return this.rasioluas();
     }
 
 }
