@@ -10,26 +10,87 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-
 public class keamananruangkelas extends JPanel {
+
     ruangkelasetget RKS = new ruangkelasetget();
-    Scanner input = new Scanner(System.in); 
+    Scanner input = new Scanner(System.in);
     saranaruangkelas SRK = new saranaruangkelas();
+    public JLabel label1;
+    public JLabel label2;
+    public JLabel label3;
+    public JLabel label5;
+    public JComboBox cb1;
+    public JComboBox cb2;
+    public JComboBox cb3;
+    public JPanel panel1;
     
-    public void keamananruangkelas(){
+  
+    public keamananruangkelas() {
+
+        String[] kokoh = {"kokoh", "tidak"};
+        String[] kunci = {"ada", "tidak ada"};
+        String[] aman = {"aman", "tidak aman"};
+
+        //kekokohan
+        label1 = new JLabel("kekokohan : ");
+        label1.setLocation(25, 25);
+        label1.setSize(label1.getPreferredSize());
+        add(label1);
+        cb1 = new JComboBox(kokoh);
+        cb1.setLocation(110, 20);
+        cb1.setSize(100, 30);
+        add(cb1);
+
+        //kunci
+        label2 = new JLabel("kunci : ");
+        label2.setLocation(25, 65);
+        label2.setSize(label2.getPreferredSize());
+        add(label2);
+        cb2 = new JComboBox(kunci);
+        cb2.setLocation(110, 60);
+        cb2.setSize(100, 30);
+        add(cb2);
+
+        //keamanan
+        label3 = new JLabel("keamanan : ");
+        label3.setLocation(25, 105);
+        label3.setSize(label3.getPreferredSize());
+        add(label3);
+        cb3 = new JComboBox(aman);
+        cb3.setLocation(110, 100);
+        cb3.setSize(100, 30);
+        add(cb3);
+        
+        
+        
+        
+        panel1 = new JPanel();
+        panel1.setLocation(240,25);
+        panel1.setSize(250,160);
+        panel1.setBackground(Color.white);
+        panel1.setBorder(BorderFactory.createTitledBorder("pastikan semua diisi sebelum process"));
+        add(panel1);
+        
+        
+        
+        
+        
+        setBackground(Color.white);
+        setBorder(BorderFactory.createEtchedBorder());
+        setLayout(null);
         System.out.print("-----KEAMANAN RUANG KELAS-----");
-    System.out.println("");
-    System.out.print("Input Kekokohan: ");
-    String koh = input.next();
-    RKS.setKekohan(koh);
-    RKS.analisiskekokohan();
-    System.out.print("Input Kunci Pintu dan Jendela: ");
-    String kun = input.next();
-    RKS.setKPJ(kun);
-    RKS.analisiskpj();
-    System.out.print("Input Bahaya: ");
-    String bah = input.next();
-    RKS.setBahaya(bah);
-    RKS.analisiskeamanan();
+        System.out.println("");
+        System.out.print("Input Kekokohan: ");
+ //   String koh = input.next();
+        //   RKS.setKekohan(koh);
+        //   RKS.analisiskekokohan();
+        System.out.print("Input Kunci Pintu dan Jendela: ");
+ //   String kun = input.next();
+        //   RKS.setKPJ(kun);
+        //   RKS.analisiskpj();
+        System.out.print("Input Bahaya: ");
+ //   String bah = input.next();
+        //   RKS.setBahaya(bah);
+        //   RKS.analisiskeamanan();
     }
 }

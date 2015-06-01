@@ -5,17 +5,32 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.plaf.nimbus.NimbusLookAndFeel;
-
+import java.io.*;
+import java.io.File;
 public class ruangkelastest extends JFrame{
    private JTabbedPane tp;
    private JPanel panelbg;
+   
+  
+    public JButton buttonprocess;
     public ruangkelastest(){
-        
+       
         try{
             UIManager.setLookAndFeel(new NimbusLookAndFeel());
         }catch(Exception e){
             
         }
+          buttonprocess = new JButton("process");
+        buttonprocess.setLocation(200,330);
+        buttonprocess.setSize(120,40);
+        add(buttonprocess);
+        buttonprocess.addActionListener(new ActionListener() {
+       
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                setBounds(100,100,1300,450);
+            }
+        });
         
        tp = new JTabbedPane();
        tp.setLocation(10,20);
@@ -46,6 +61,8 @@ public class ruangkelastest extends JFrame{
 
         menu.add(submenu);
         submenu.add(item1);
+    
+        
         submenu.addSeparator();
         submenu.add(item4);
         menu.add(submenu1);
@@ -58,24 +75,23 @@ public class ruangkelastest extends JFrame{
             }
         });
        
+       
+        
        panelbg = new JPanel();
        panelbg.setLocation(0,0);
        panelbg.setSize(400,400);
        panelbg.setBackground(Color.white);
        add(panelbg);
-       setBounds(300,150,600,400);
+       setBounds(300,150,600,450);
        setVisible(true);
        setTitle("Inventaris Kelas");
        setDefaultCloseOperation(EXIT_ON_CLOSE);
         
-        setResizable(false);
+        setResizable(true);
     }
     
     
     public static void main(String[] args) {
-      
-       ruangkelastest rkt = new ruangkelastest();  
-
        saranaruangkelas SRK = new saranaruangkelas();
        identitaskelas ik = new identitaskelas();
        kondisiruangkelas kork = new kondisiruangkelas();
@@ -83,7 +99,9 @@ public class ruangkelastest extends JFrame{
        kenyamananruangkelas kenyrk = new kenyamananruangkelas();
        keamananruangkelas keamanan = new keamananruangkelas();
        lingkunganruangkelas lrk = new lingkunganruangkelas();
-    
+   
+       ruangkelastest rkt = new ruangkelastest();  
+
        
      //  ik.identitaskelas();
    //    kork.kondisiruangkelas();
