@@ -49,8 +49,8 @@ public class saranaruangkelas extends JPanel {
         String[] SSID = {"UMM Hotspot", "UMM Premium", "wifi.id", "LAB. Informatika"};
         
         //steker
-        label1 = new JLabel("steker : ");
-        label1.setLocation(25, 25);
+        label1 = new JLabel("Jml steker : ");
+        label1.setLocation(20, 25);
         label1.setSize(label1.getPreferredSize());
         add(label1);
         txt1 = new JTextField(10);
@@ -68,8 +68,8 @@ public class saranaruangkelas extends JPanel {
         add(cbstekerkondisi);
 
         //kabel
-        label2 = new JLabel("Kabel LCD : ");
-        label2.setLocation(25,55);
+        label2 = new JLabel("Jml Kabel LCD : ");
+        label2.setLocation(20,55);
         label2.setSize(label2.getPreferredSize());
         add(label2);
         txt2 = new JTextField(10);
@@ -87,8 +87,8 @@ public class saranaruangkelas extends JPanel {
         
         
         //lampu
-        label3 = new JLabel("lampu : ");
-        label3.setLocation(25,85);
+        label3 = new JLabel("Jml lampu : ");
+        label3.setLocation(20,85);
         label3.setSize(label3.getPreferredSize());
         add(label3);
         txt3 = new JTextField(10);
@@ -105,8 +105,8 @@ public class saranaruangkelas extends JPanel {
         add(cblampukondisi);
         
         //kipas angin
-        label4 = new JLabel("kipas angin : ");
-        label4.setLocation(25,115);
+        label4 = new JLabel("Jml kipas angin:");
+        label4.setLocation(20,115);
         label4.setSize(label4.getPreferredSize());
         add(label4);
         txt4 = new JTextField(10);
@@ -124,8 +124,8 @@ public class saranaruangkelas extends JPanel {
         
         
         //AC
-        label5 = new JLabel("AC : ");
-        label5.setLocation(25,145);
+        label5 = new JLabel("Jml AC : ");
+        label5.setLocation(20,145);
         label5.setSize(label5.getPreferredSize());
         add(label5);
         txt5 = new JTextField(10);
@@ -142,8 +142,8 @@ public class saranaruangkelas extends JPanel {
         add(cbACkondisi);
         
         //CCTV
-        label6 = new JLabel("CCTV : ");
-        label6.setLocation(25,175);
+        label6 = new JLabel("Jml CCTV : ");
+        label6.setLocation(20,175);
         label6.setSize(label6.getPreferredSize());
         add(label6);
         txt6 = new JTextField(10);
@@ -162,7 +162,7 @@ public class saranaruangkelas extends JPanel {
         
         //WIFI
         label7 = new JLabel("SSID");
-        label7.setLocation(25,205);
+        label7.setLocation(20,205);
         label7.setSize(label7.getPreferredSize());
         add(label7);
         cbSSID = new JComboBox(SSID);
