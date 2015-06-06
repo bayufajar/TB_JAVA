@@ -15,8 +15,6 @@ public class lingkunganruangkelas extends JPanel{
     Scanner input = new Scanner(System.in); 
     saranaruangkelas SRK = new saranaruangkelas();
     kebersihanruangkelas krk = new kebersihanruangkelas();
-    public JLabel bersih;
-    public JLabel keterangan;
     public JLabel llantai;
     public JLabel ldinding;
     public JLabel latap;
@@ -34,32 +32,23 @@ public class lingkunganruangkelas extends JPanel{
     
     
     public lingkunganruangkelas(){
-        
-        keterangan = new JLabel("Keterangan: ");
-        keterangan.setLocation(355, 35);
-        keterangan.setSize(keterangan.getPreferredSize());
-        
-        bersih = new JLabel("Bersih atau Kotor");
-        bersih.setLocation(365, 55);
-        bersih.setSize(bersih.getPreferredSize());
-                
-    llantai = new JLabel("Kondisi lantai : ");
+    llantai = new JLabel("lantai : ");
      llantai.setLocation(10,35);
      llantai.setSize(llantai.getPreferredSize());
      
-     ldinding = new JLabel("Kondisi dinding");
+     ldinding = new JLabel("lebar : ");
      ldinding.setLocation(10,75);
      ldinding.setSize(ldinding.getPreferredSize());
      
-     latap = new JLabel("Kondisi atap : ");
+     latap = new JLabel("jumlah kursi : ");
      latap.setLocation(10,115);
      latap.setSize(latap.getPreferredSize());
      
-     lpintu = new JLabel("Kondisi pintu : ");
+     lpintu = new JLabel("jumlah pintu : ");
      lpintu.setLocation(10,155);
      lpintu.setSize(lpintu.getPreferredSize());
      
-     ljendela = new JLabel("Kondisi jendela : ");
+     ljendela = new JLabel("jumlah jendela : ");
      ljendela.setLocation(10,195);
      ljendela.setSize(ljendela.getPreferredSize());
      
@@ -93,8 +82,6 @@ public class lingkunganruangkelas extends JPanel{
     gb.setBackground(Color.white);
     gb.setBorder(BorderFactory.createTitledBorder("kondisi"));
     
-    add(bersih); 
-    add(keterangan);
      add(txt4);
      add(txt5);
      add(llantai);
