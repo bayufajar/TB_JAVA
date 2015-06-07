@@ -40,7 +40,7 @@ public class keamananruangkelas extends JPanel {
         cb1.setLocation(110, 20);
         cb1.setSize(100, 30);
         add(cb1);
-
+        RKS.setKekohan((String) cb1.getSelectedItem()); 
         //kunci
         label2 = new JLabel("kunci : ");
         label2.setLocation(25, 65);
@@ -50,7 +50,7 @@ public class keamananruangkelas extends JPanel {
         cb2.setLocation(110, 60);
         cb2.setSize(100, 30);
         add(cb2);
-
+        RKS.setKPJ((String) cb2.getSelectedItem());
         //keamanan
         label3 = new JLabel("keamanan : ");
         label3.setLocation(25, 105);
@@ -60,7 +60,7 @@ public class keamananruangkelas extends JPanel {
         cb3.setLocation(110, 100);
         cb3.setSize(100, 30);
         add(cb3);
-        
+        RKS.setKeamanan((String) cb3.getSelectedItem());
         
         
         
@@ -81,16 +81,6 @@ public class keamananruangkelas extends JPanel {
         System.out.print("-----KEAMANAN RUANG KELAS-----");
         System.out.println("");
         System.out.print("Input Kekokohan: ");
- //   String koh = input.next();
-        //   RKS.setKekohan(koh);
-        //   RKS.analisiskekokohan();
-        System.out.print("Input Kunci Pintu dan Jendela: ");
- //   String kun = input.next();
-        //   RKS.setKPJ(kun);
-        //   RKS.analisiskpj();
-        System.out.print("Input Bahaya: ");
- //   String bah = input.next();
-        //   RKS.setBahaya(bah);
-        //   RKS.analisiskeamanan();
+ 
     }
 }

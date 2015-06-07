@@ -47,6 +47,7 @@ public class lingkunganruangkelas extends JPanel{
      llantai.setLocation(10,35);
      llantai.setSize(llantai.getPreferredSize());
      
+<<<<<<< HEAD
      ldinding = new JLabel("Kondisi dinding");
      ldinding.setLocation(10,75);
      ldinding.setSize(ldinding.getPreferredSize());
@@ -60,6 +61,21 @@ public class lingkunganruangkelas extends JPanel{
      lpintu.setSize(lpintu.getPreferredSize());
      
      ljendela = new JLabel("Kondisi jendela : ");
+=======
+     ldinding = new JLabel("dinding : ");
+     ldinding.setLocation(10,75);
+     ldinding.setSize(ldinding.getPreferredSize());
+     
+     latap = new JLabel("atap : ");
+     latap.setLocation(10,115);
+     latap.setSize(latap.getPreferredSize());
+     
+     lpintu = new JLabel("pintu : ");
+     lpintu.setLocation(10,155);
+     lpintu.setSize(lpintu.getPreferredSize());
+     
+     ljendela = new JLabel("jendela : ");
+>>>>>>> Bayu Fajar Pratama
      ljendela.setLocation(10,195);
      ljendela.setSize(ljendela.getPreferredSize());
      
@@ -69,23 +85,25 @@ public class lingkunganruangkelas extends JPanel{
      
      txt1.setLocation(120,30);
      txt1.setSize(txt1.getPreferredSize());
-     
+     RKS.setKondlantai(txt1.getText());
      txt2.setLocation(120,70);
      txt2.setSize(txt2.getPreferredSize());
-     
+     RKS.setKonddinding(txt2.getText());
      txt3.setLocation(120,110);
      txt3.setSize(txt3.getPreferredSize());
-     
+     RKS.setKondatap(txt3.getText());
      txt4.setLocation(120,150);
      txt4.setSize(txt4.getPreferredSize());
+     RKS.setKondpintu(txt4.getText());
      txt5.setLocation(120,190);
      txt5.setSize(txt5.getPreferredSize());
-     
+     RKS.setKondjendela(txt5.getText());
      
      String[] textcombo = {"bersih", "kotor"};
      pilihan = new JComboBox(textcombo);
      pilihan.setLocation(120,230);
      pilihan.setSize(80,25);
+     RKS.setKesimpulan((String) pilihan.getSelectedItem()); 
      
     gb = new JPanel();
     gb.setLocation(110,5);

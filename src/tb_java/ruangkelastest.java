@@ -28,7 +28,7 @@ public class ruangkelastest extends JFrame{
        
             @Override
             public void actionPerformed(ActionEvent ae) {
-                setBounds(100,100,1300,450);
+                setBounds(100,100,300,450);
             }
         });
         

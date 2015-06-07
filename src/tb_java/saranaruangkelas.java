@@ -4,6 +4,8 @@ import java.util.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
 public class saranaruangkelas extends JPanel {
 
@@ -11,6 +13,18 @@ public class saranaruangkelas extends JPanel {
     ruangkelasetget RKS = new ruangkelasetget();
     indukinterface iif = new forpolimorfis();
 
+    public JSlider slider1;
+    public JSlider slider2;
+    public JSlider slider3;
+    public JSlider slider4;
+    public JSlider slider5;
+    public JSlider slider6;
+    public JLabel nilaislider1;
+    public JLabel nilaislider2;
+    public JLabel nilaislider3;
+    public JLabel nilaislider4;
+    public JLabel nilaislider5;
+    public JLabel nilaislider6;
     public JTextField txt1;
     public JTextField txt2;
     public JTextField txt3;
@@ -53,11 +67,33 @@ public class saranaruangkelas extends JPanel {
         label1.setLocation(20, 25);
         label1.setSize(label1.getPreferredSize());
         add(label1);
-        txt1 = new JTextField(10);
-        txt1.setLocation(110, 20);
-        txt1.setSize(txt1.getPreferredSize());
+        
+      //  txt1 = new JTextField(10);
+      //  txt1.setLocation(110, 20);
+       // txt1.setSize(txt1.getPreferredSize());
+        
+        slider1 = new JSlider();
+        slider1.setLocation(110,25);
+        slider1.setSize(100,20);
+        slider1.setMinimum(1);
+        slider1.setMaximum(5);
+        slider1.setValue(1);
+        slider1.addChangeListener(new ChangeListener() {
 
-        cbsteker = new JComboBox(Posisi);
+         @Override
+         public void stateChanged(ChangeEvent ce) {
+        nilaislider1.setText(String.valueOf(slider1.getValue())); 
+        RKS.setJumkontak(slider1.getValue());
+         }
+     });
+     add(slider1);
+     
+     nilaislider1 = new JLabel("1");
+     nilaislider1.setLocation(220,30);
+     nilaislider1.setSize(nilaislider1.getPreferredSize());
+     add(nilaislider1);
+        
+     cbsteker = new JComboBox(Posisi);
         cbsteker.setLocation(250, 20);
         cbsteker.setSize(100, 30);
         add(cbsteker);
@@ -72,10 +108,32 @@ public class saranaruangkelas extends JPanel {
         label2.setLocation(20,55);
         label2.setSize(label2.getPreferredSize());
         add(label2);
-        txt2 = new JTextField(10);
-        txt2.setLocation(110,50);
-        txt2.setSize(txt2.getPreferredSize());
-        add(txt2);
+   //     txt2 = new JTextField(10);
+     //   txt2.setLocation(110,50);
+      //  txt2.setSize(txt2.getPreferredSize());
+    //    add(txt2);
+        
+        slider2 = new JSlider();
+        slider2.setLocation(110,55);
+        slider2.setSize(100,20);
+        slider2.setMinimum(1);
+        slider2.setMaximum(5);
+        slider2.setValue(1);
+        slider2.addChangeListener(new ChangeListener() {
+
+         @Override
+         public void stateChanged(ChangeEvent ce) {
+        nilaislider2.setText(String.valueOf(slider2.getValue())); 
+        RKS.setKabelLCD(slider2.getValue());
+         }
+     });
+     add(slider2);
+     
+     nilaislider2 = new JLabel("1");
+     nilaislider2.setLocation(220,55);
+     nilaislider2.setSize(nilaislider2.getPreferredSize());
+     add(nilaislider2);
+        
         cbkabel = new JComboBox(Posisi);
         cbkabel.setLocation(250,50);
         cbkabel.setSize(100,30);
@@ -91,10 +149,32 @@ public class saranaruangkelas extends JPanel {
         label3.setLocation(20,85);
         label3.setSize(label3.getPreferredSize());
         add(label3);
-        txt3 = new JTextField(10);
-        txt3.setLocation(110,80);
-        txt3.setSize(txt3.getPreferredSize());
-        add(txt3);
+  //      txt3 = new JTextField(10);
+    //    txt3.setLocation(110,80);
+      //  txt3.setSize(txt3.getPreferredSize());
+        //add(txt3);
+        
+           slider3 = new JSlider();
+        slider3.setLocation(110,85);
+        slider3.setSize(100,20);
+        slider3.setMinimum(1);
+        slider3.setMaximum(5);
+        slider3.setValue(1);
+        slider3.addChangeListener(new ChangeListener() {
+
+         @Override
+         public void stateChanged(ChangeEvent ce) {
+        nilaislider3.setText(String.valueOf(slider3.getValue())); 
+        RKS.setJumLampu(slider3.getValue());
+         }
+     });
+     add(slider3);
+     
+     nilaislider3 = new JLabel("1");
+     nilaislider3.setLocation(220,80);
+     nilaislider3.setSize(nilaislider3.getPreferredSize());
+     add(nilaislider3);
+        
         cblampu = new JComboBox(Posisi);
         cblampu.setLocation(250,80);
         cblampu.setSize(100,30);
@@ -109,10 +189,33 @@ public class saranaruangkelas extends JPanel {
         label4.setLocation(20,115);
         label4.setSize(label4.getPreferredSize());
         add(label4);
-        txt4 = new JTextField(10);
-        txt4.setLocation(110,110);
-        txt4.setSize(txt4.getPreferredSize());
-        add(txt4);
+ //       txt4 = new JTextField(10);
+   //     txt4.setLocation(110,110);
+     //   txt4.setSize(txt4.getPreferredSize());
+       // add(txt4);
+        
+           slider4 = new JSlider();
+        slider4.setLocation(110,115);
+        slider4.setSize(100,20);
+        slider4.setMinimum(1);
+        slider4.setMaximum(5);
+        slider4.setValue(1);
+        slider4.addChangeListener(new ChangeListener() {
+
+         @Override
+         public void stateChanged(ChangeEvent ce) {
+        nilaislider4.setText(String.valueOf(slider4.getValue())); 
+        RKS.setJumKipas(slider4.getValue());
+         }
+     });
+     add(slider4);
+     
+     nilaislider4 = new JLabel("1");
+     nilaislider4.setLocation(220,115);
+     nilaislider4.setSize(nilaislider4.getPreferredSize());
+     add(nilaislider4);
+        
+        
         cbkipasangin = new JComboBox(Posisi);
         cbkipasangin.setLocation(250,110);
         cbkipasangin.setSize(100,30);
@@ -128,10 +231,31 @@ public class saranaruangkelas extends JPanel {
         label5.setLocation(20,145);
         label5.setSize(label5.getPreferredSize());
         add(label5);
-        txt5 = new JTextField(10);
-        txt5.setLocation(110,140);
-        txt5.setSize(txt5.getPreferredSize());
-        add(txt5);
+   //     txt5 = new JTextField(10);
+   //     txt5.setLocation(110,140);
+   //     txt5.setSize(txt5.getPreferredSize());
+   //     add(txt5);
+           slider5 = new JSlider();
+        slider5.setLocation(110,145);
+        slider5.setSize(100,20);
+        slider5.setMinimum(1);
+        slider5.setMaximum(5);
+        slider5.setValue(1);
+        slider5.addChangeListener(new ChangeListener() {
+
+         @Override
+         public void stateChanged(ChangeEvent ce) {
+        nilaislider5.setText(String.valueOf(slider5.getValue())); 
+        RKS.setJumAC(slider5.getValue());
+         }
+     });
+     add(slider5);
+     
+     nilaislider5 = new JLabel("1");
+     nilaislider5.setLocation(220,145);
+     nilaislider5.setSize(nilaislider5.getPreferredSize());
+     add(nilaislider5);
+        
         cbAC = new JComboBox(Posisi);
         cbAC.setLocation(250,140);
         cbAC.setSize(100,30);
@@ -146,10 +270,31 @@ public class saranaruangkelas extends JPanel {
         label6.setLocation(20,175);
         label6.setSize(label6.getPreferredSize());
         add(label6);
-        txt6 = new JTextField(10);
-        txt6.setLocation(110,170);
-        txt6.setSize(txt6.getPreferredSize());
-        add(txt6);
+        //txt6 = new JTextField(10);
+       // txt6.setLocation(110,170);
+     //   txt6.setSize(txt6.getPreferredSize());
+   //     add(txt6);
+           slider6 = new JSlider();
+        slider6.setLocation(110,175);
+        slider6.setSize(100,20);
+        slider6.setMinimum(1);
+        slider6.setMaximum(5);
+        slider6.setValue(1);
+        slider6.addChangeListener(new ChangeListener() {
+
+         @Override
+         public void stateChanged(ChangeEvent ce) {
+        nilaislider6.setText(String.valueOf(slider6.getValue())); 
+        RKS.setJumCCTV(slider6.getValue());
+         }
+     });
+     add(slider6);
+     
+     nilaislider6 = new JLabel("1");
+     nilaislider6.setLocation(220,175);
+     nilaislider6.setSize(nilaislider6.getPreferredSize());
+     add(nilaislider6);
+        
         cbCCTV = new JComboBox(Posisi);
         cbCCTV.setLocation(250,170);
         cbCCTV.setSize(100,30);
@@ -169,130 +314,25 @@ public class saranaruangkelas extends JPanel {
         cbSSID.setLocation(110,200);
         cbSSID.setSize(130,30);
         add(cbSSID);
+        RKS.setSSID((String) cbSSID.getSelectedItem());
         cbbandwith = new JComboBox(bandwith);
         cbbandwith.setLocation(250,200);
         cbbandwith.setSize(100,30);
         add(cbbandwith);
-        
+        RKS.setBandwith((String) cbbandwith.getSelectedItem());
         panelbg = new JPanel();
         panelbg.setLocation(10, 5);
         panelbg.setSize(520, 250);
         panelbg.setBackground(Color.white);
         panelbg.setBorder(BorderFactory.createTitledBorder(""));
 
-        add(txt1);
+//        add(txt1);
         add(panelbg);
 
         setBackground(Color.white);
         setBorder(BorderFactory.createEtchedBorder());
         setLayout(null);
 
-    //    System.out.println("------Lingkungan Ruang Kelas-------");
-        //  System.out.println("");
-        // System.out.print("input jumlah stop kontak : ");
-        //     int sk = input.nextInt();
-        //       RKS.setJumkontak(sk);
-        //     
-        //     System.out.print("input kondisi stop kontak : ");
-        //    String kondsk = input.next();
-        //   RKS.setKondkontak(kondsk);
-        //  iif.kondisi();
-        //      System.out.print("input posisi stop kontak : ");
-        //     String posSK = input.next();
-        //    RKS.setPoskontak(posSK);
-        //    iif.posisi();
-        //     if (RKS.getJumkontak() > 4 && RKS.getKondkontak().equals("baik") && RKS.getPoskontak().equals("dekat dosen")) {
-        //         return;
-        //     } else {
-     //   }
-        //   System.out.print("input jumlah kabel LCD : ");
-        //   int JKB = input.nextInt();
-        //   RKS.setKabelLCD(JKB);
-        //  System.out.print("input kondisi kabel LCD : ");
-        // String KKB = input.next();
-        //  RKS.setKondkabLCD(KKB);
-        //  iif.kondisi();
-        // System.out.print("input posisi kabel LCD : ");
-        // String PKB = input.next();
-        //  RKS.setPoskabLCD(PKB);
-        // iif.posisi();
-        //  if (RKS.getKabelLCD() >= 1 && RKS.getKondkabLCD().equals("baik") && RKS.getPoskabLCD().equals("dekat dosen")) {
-        //      return;
-        //  } else {
-        //  }
-        //  System.out.print("input jumlah kipas : ");
-        //  int JKP = input.nextInt();
-        //  RKS.setJumKipas(JKP);
-        ///  System.out.print("input kondisi kipas : ");
-        //  String KKP = input.next();
-        //  RKS.setKondkipas(KKP);
-        //  System.out.print("input posisi kipas : ");
-        //  String PKKS = input.next();
-        //  RKS.setPosKipas(PKKS);
-        //  System.out.print("input jumlah lampu");
-        // int JLP = input.nextInt();
-        //   RKS.setJumLampu(JLP);
-        //  System.out.print("kondisi lampu : ");
-        //  String KLP = input.next();
-        //  RKS.setKondlampu(KLP);
-        //   System.out.print("posisi Lampu : ");
-        ///   String PLP = input.next();
-        //   RKS.setPoslampu(PLP);
-        //  if (RKS.getJumLampu() >= 18 && RKS.getKondlampu().equals("baik") && RKS.getPoslampu().equals("atap")) {
-        //      return;
-        //  } else {
-     //   }
-        //   System.out.print("Jumlah KIPAS Angin : ");
-        // int JKA = input.nextInt();
-        //  RKS.setJumKipas(JKA);
-        //   System.out.print("kondisi kipas : ");
-        //    String baik = input.next();
-        ///    RKS.setKondkipas(baik);
-        //    System.out.print("posisi kipas : ");
-        //   String PKA = input.next();
-        //   RKS.setPosKipas(PKA);
-        //  if (RKS.getJumKipas() >= 2 && RKS.getKondkipas().equals("baik") && RKS.getPosKipas().equals("atap")) {
-        //     return;
-        //} else {
-        //   }
-        //  System.out.print("Jumlah AC : ");
-        // int JAC = input.nextInt();
-        //RKS.setJumAC(JAC);
-        //   System.out.print("kondisi AC : ");
-        //   String KAC = input.next();
-        //  RKS.setKondAC(KAC);
-        // System.out.print("posisi AC : ");
-        // String PAC = input.next();
-//        RKS.setPosAC(PAC);
-//
-        //      if (RKS.getJumAC() >= 1 && RKS.getKondAC().equals("baik") && RKS.getPosAC().equals("dibelakang")) {
-        //        return;
-        //  }
-//
-        //      System.out.print("pilih SSID : \n1. UMM Hotspot \n2. UMM Premium \n3. haji lulung");
-        //    int pssid = input.nextInt();
-        //  RKS.setSSID(pssid);
-        //System.out.print("besar bandwith : ");
-//        int bb = input.nextInt();
-        //      RKS.setBandwith(bb);
-//
-        //      if (RKS.getSSID() == 1) {
-        //        return;
-        //  }
-        //System.out.print("jumlah CCTV : ");
-//        int jctv = input.nextInt();
-        //      RKS.setJumCCTV(jctv);
-        //    System.out.print("kondisi CCTV : ");
-        //  String kctv = input.next();
-///        RKS.setKondCTV(kctv);
-        //     System.out.print("posisi CCTV : ");
-        //      System.out.println("1. ");
-        //    System.out.println("2. ");
-        //  String pos = input.next();
-        //RKS.setPosCTV(posSK);
-        //       if (RKS.getJumCCTV() == 2 && RKS.getKondCTV().equals("baik") && RKS.getPosCTV().equals("didepan") && RKS.getPosCTV().equals("dibelakang")) {
-        //         return;
-        //   }
     }
 
 }

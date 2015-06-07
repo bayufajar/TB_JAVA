@@ -55,16 +55,18 @@ private int jumKipas;
 private String kondkipas;
 private String posKipas;
 private int jumAC;
+private String kesimpulan;
 private String kondAC;
 private String posAC;
-private int SSID;
-private int bandwith;
+private String SSID;
+private String bandwith;
 private int jumCCTV;
 private String kondCTV;
 private String posCTV;
 private String analisislingkungan;
- String hasiludara;
- String hasilcahaya;
+private String keamanan;
+String hasiludara;
+String hasilcahaya;
 String hasilsuhu;
 String hasillembab;
 String hasilbentukruang;
@@ -662,19 +664,7 @@ String hasilkeamanan;
     }
 
 
-    /**
-     * @return the bandwith
-     */
-    public int getBandwith() {
-        return bandwith;
-    }
-
-    /**
-     * @param bandwith the bandwith to set
-     */
-    public void setBandwith(int bandwith) {
-        this.bandwith = bandwith;
-    }
+   
 
     /**
      * @return the jumCCTV
@@ -732,19 +722,7 @@ String hasilkeamanan;
         this.bentukruang = bentukruang;
     }
 
-    /**
-     * @return the SSID
-     */
-    public int getSSID() {
-        return SSID;
-    }
-
-    /**
-     * @param SSID the SSID to set
-     */
-    public void setSSID(int SSID) {
-        this.SSID = SSID;
-    }
+   
 
     /**
      * @return the analisislingkungan
@@ -887,6 +865,62 @@ String hasilkeamanan;
     }
     
    return this.rasioluas();
+    }
+
+    /**
+     * @return the kesimpulan
+     */
+    public String getKesimpulan() {
+        return kesimpulan;
+    }
+
+    /**
+     * @param kesimpulan the kesimpulan to set
+     */
+    public void setKesimpulan(String kesimpulan) {
+        this.kesimpulan = kesimpulan;
+    }
+
+    /**
+     * @return the SSID
+     */
+    public String getSSID() {
+        return SSID;
+    }
+
+    /**
+     * @param SSID the SSID to set
+     */
+    public void setSSID(String SSID) {
+        this.SSID = SSID;
+    }
+
+    /**
+     * @return the bandwith
+     */
+    public String getBandwith() {
+        return bandwith;
+    }
+
+    /**
+     * @param bandwith the bandwith to set
+     */
+    public void setBandwith(String bandwith) {
+        this.bandwith = bandwith;
+    }
+
+    /**
+     * @return the keamanan
+     */
+    public String getKeamanan() {
+        return keamanan;
+    }
+
+    /**
+     * @param keamanan the keamanan to set
+     */
+    public void setKeamanan(String keamanan) {
+        this.keamanan = keamanan;
     }
 
 }

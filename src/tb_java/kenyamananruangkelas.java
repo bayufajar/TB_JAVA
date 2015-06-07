@@ -43,7 +43,7 @@ public class kenyamananruangkelas extends JPanel{
         cb1.setLocation(110,20);
         cb1.setSize(100,30);
         add(cb1);
-        
+        RKS.setKebisingan((String) cb1.getSelectedItem());
         //bau
         label2 = new JLabel("bau");
         label2.setLocation(25,65);
@@ -53,7 +53,7 @@ public class kenyamananruangkelas extends JPanel{
         cb2.setLocation(110,60);
         cb2.setSize(100,30);
         add(cb2);
-        
+        RKS.setBau((String) cb2.getSelectedItem());
         //kebocoran
         label3 = new JLabel("kebocoran : ");
         label3.setLocation(25,95);
@@ -63,6 +63,7 @@ public class kenyamananruangkelas extends JPanel{
         cb3.setLocation(110,90);
         cb3.setSize(100,30);
         add(cb3);
+        RKS.setKebocoran((String) cb3.getSelectedItem()); 
         
         //kerusakan
         label4 = new JLabel("kerusakan : ");
@@ -73,31 +74,11 @@ public class kenyamananruangkelas extends JPanel{
         cb4.setLocation(110,120);
         cb4.setSize(100,30);
         add(cb4);
+        RKS.setKerusakan((String) cb4.getSelectedItem()); 
         
-         setBackground(Color.white);
+        setBackground(Color.white);
         setBorder(BorderFactory.createEtchedBorder());
         setLayout(null);
-    System.out.print("-----KENYAMANAN RUANG KELAS-----");
-    System.out.println("");
-    System.out.print("Input Kebisingan: ");
- //   String bising = input.next();
-  //  RKS.setKebisingan(bising);
-  //  RKS.analisiskebisingan();
-    System.out.print("Input Bau: ");
-////    String au = input.next();
-  //  RKS.setBau(au);
-  //  RKS.analisisbau();
-    System.out.print("Input Kebocoran: ");
- //   String cor = input.next();
- //   RKS.setKebocoran(cor);
- //   RKS.analisiskebocoran();
-    System.out.print("Input Kerusakan: ");
- //   String sak = input.next();
-  //  RKS.setKerusakan(sak);
-  //  RKS.analisiskerusakan();
-    System.out.print("Input Keausan: ");
- //   String aus = input.next();
-  //  RKS.setKeausan(aus);
-  //  RKS.analisiskeausan();
+
     }
 }
