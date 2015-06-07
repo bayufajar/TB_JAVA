@@ -61,18 +61,6 @@ public class identitaskelas extends JPanel {
     setBorder(BorderFactory.createEtchedBorder());
     setLayout(null);
    
-   // System.out.println("------Identitas Ruang Kelas-------");
-    //System.out.println("");
-    //System.out.print("nama ruang kelas : ");
-    //String s = input.next();
-    //RKS.setNamaruang(s);
-    //System.out.print("alamat kelas : ");
-    //String a = input.next();
-    //RKS.setLokasiruang(a);
-    //System.out.print("input Fa/jurusan : ");
-    //String d = input.next();
-    //RKS.setFaJur(d);
-    //System.out.println("");
+
     }
-    
 }

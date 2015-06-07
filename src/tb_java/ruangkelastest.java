@@ -44,7 +44,7 @@ public class ruangkelastest extends JFrame {
                 boolean sukses = false;
                 try{
                     if(lrk.pilihan.getSelectedItem().equals("bersih")){
-                        RKS.setKesimpulan("bersih");
+                       RKS.setKesimpulan("bersih");
                     }else{ 
                         RKS.setKesimpulan("kotor");
                     }
