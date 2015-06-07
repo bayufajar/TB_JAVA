@@ -129,35 +129,6 @@ public class lingkunganruangkelas extends JPanel{
      setLayout(null);
      setBackground(Color.white);
      setBorder(BorderFactory.createEtchedBorder());
-//       System.out.print("-----LINGKUNGAN RUANG KELAS-----");
-    //System.out.println("");
- //   System.out.print("Input Kondisi Lantai: ");
-  //  String lantai = input.next();
-   // RKS.setKondlantai(lantai);
-   // System.out.print("Input Kondisi Dinding: ");
-   // String dinding = input.next();
-   // RKS.setKonddinding(dinding);
-   // System.out.print("Input Kondisi Atap: ");
-   // String atap = input.next();
-   // RKS.setKondatap(atap);
-   // System.out.print("Input Kondisi Pintu: ");
-   // String pintu = input.next();
-    //RKS.setKondpintu(pintu);
-   // System.out.print("Input Kondisi Jendela: ");
-    //String jendela = input.next();
-    //RKS.setKondjendela(jendela);
-   /// System.out.print("Kesimpulan(bersih/kotor) : ");
-   // String kesimpulan = input.next();
-    //RKS.setAnalisislingkungan(kesimpulan);
-        
-}
-    //public String analisislingkungan(){
-    //if(RKS.getAnalisislingkungan().equals("bersih")){
-     //  kebersihanruangkelas krk = new kebersihanruangkelas();
-    //}else{
-     //   kebersihanruangkelas krk = new kebersihanruangkelas();
-    //}    
-      //  return analisislingkungan();
-   // }
-    }
+
+    }}
 

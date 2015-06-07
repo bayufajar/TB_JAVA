@@ -13,9 +13,9 @@ public class identitaskelas extends JPanel {
     public JLabel lnamakelas;
     public JLabel lalamat;
     public JLabel llokasi;
-    public JTextField txt1 = new JTextField(20);
-    public JTextField txt2 = new JTextField(20);
-    public JTextField txt3 = new JTextField(20);
+    public JTextField txt1;
+    public JTextField txt2;
+    public JTextField txt3;
     public JPanel gb;
     public identitaskelas(){
     
@@ -32,27 +32,30 @@ public class identitaskelas extends JPanel {
     llokasi.setLocation(10,115);
     llokasi.setSize(llokasi.getPreferredSize());
     
+    txt1 = new JTextField(20);
     txt1.setLocation(120,30);
     txt1.setSize(txt1.getPreferredSize());
-    RKS.setNamaruang(txt1.getText());
+    
+    txt2 = new JTextField(20);
     txt2.setLocation(120,70);
     txt2.setSize(txt2.getPreferredSize());
-    RKS.setLokasiruang(txt2.getText());
+    
+    txt3 = new JTextField(20);
     txt3.setLocation(120,110);
     txt3.setSize(txt3.getPreferredSize());
-    RKS.setFaJur(txt3.getText());
-    gb = new JPanel();
-    gb.setLocation(110,5);
-    gb.setSize(340,150);
-    gb.setBackground(Color.white);
-    gb.setBorder(BorderFactory.createTitledBorder("identitas"));
-    
     add(lnamakelas);
     add(lalamat);
     add(llokasi);
     add(txt1);
     add(txt2);
     add(txt3);
+    gb = new JPanel();
+    gb.setLocation(110,5);
+    gb.setSize(340,150);
+    gb.setBackground(Color.white);
+    gb.setBorder(BorderFactory.createTitledBorder("identitas"));
+    
+   
     add(gb);
     setBackground(Color.white);
     setBorder(BorderFactory.createEtchedBorder());

@@ -78,9 +78,7 @@ public class keamananruangkelas extends JPanel {
         setBackground(Color.white);
         setBorder(BorderFactory.createEtchedBorder());
         setLayout(null);
-        System.out.print("-----KEAMANAN RUANG KELAS-----");
-        System.out.println("");
-        System.out.print("Input Kekokohan: ");
+ 
  
     }
 }

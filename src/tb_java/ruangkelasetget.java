@@ -5,11 +5,13 @@
  */
 package tb_java;
 
+import java.io.Serializable;
+
 /**
  *
  * @author espadafajar
  */
-public class ruangkelasetget extends IndukKelas {
+public class ruangkelasetget implements Serializable {
     
 
 private String namaruang;
@@ -837,7 +839,7 @@ String hasilkeamanan;
      return null;
     }
 
-    @Override
+
     int luas() {
             
        int L = this.panjang * this.lebar;
@@ -849,7 +851,7 @@ String hasilkeamanan;
     return L;
      }
 
-    @Override
+  
     int rasioluas() {
     this.rasioluas = this.luas / this.jumlah_kursi;
          if (this.rasioluas >=0.5){
