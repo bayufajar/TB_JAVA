@@ -97,12 +97,12 @@ public class saranaruangkelas extends JPanel {
         cbsteker.setLocation(250, 20);
         cbsteker.setSize(100, 30);
         add(cbsteker);
-
+        RKS.setPoskontak((String) cbsteker.getSelectedItem());
         cbstekerkondisi = new JComboBox(kondisi);
         cbstekerkondisi.setLocation(370, 20);
         cbstekerkondisi.setSize(80, 30);
         add(cbstekerkondisi);
-
+        RKS.setKondkontak((String) cbstekerkondisi.getSelectedItem());
         //kabel
         label2 = new JLabel("Jml Kabel LCD : ");
         label2.setLocation(20,55);
@@ -138,11 +138,12 @@ public class saranaruangkelas extends JPanel {
         cbkabel.setLocation(250,50);
         cbkabel.setSize(100,30);
         add(cbkabel);
+        RKS.setPoskabLCD((String) cbkabel.getSelectedItem());
         cbkabelkondisi = new JComboBox(kondisi);
         cbkabelkondisi.setLocation(370,50);
         cbkabelkondisi.setSize(80,30);
         add(cbkabelkondisi);
-        
+        RKS.setKondkabLCD((String) cbkabelkondisi.getSelectedItem());
         
         //lampu
         label3 = new JLabel("Jml lampu : ");
@@ -179,11 +180,12 @@ public class saranaruangkelas extends JPanel {
         cblampu.setLocation(250,80);
         cblampu.setSize(100,30);
         add(cblampu);
+       RKS.setPoslampu((String) cblampu.getSelectedItem()); 
         cblampukondisi = new JComboBox(kondisi);
         cblampukondisi.setLocation(370,80);
         cblampukondisi.setSize(80,30);
         add(cblampukondisi);
-        
+        RKS.setKondlampu((String) cblampukondisi.getSelectedItem());
         //kipas angin
         label4 = new JLabel("Jml kipas angin:");
         label4.setLocation(20,115);
@@ -220,11 +222,12 @@ public class saranaruangkelas extends JPanel {
         cbkipasangin.setLocation(250,110);
         cbkipasangin.setSize(100,30);
         add(cbkipasangin);
+        RKS.setPosKipas((String) cbkipasangin.getSelectedItem());
         cbkipasanginkondisi = new JComboBox(kondisi);
         cbkipasanginkondisi.setLocation(370,110);
         cbkipasanginkondisi.setSize(80,30);
         add(cbkipasanginkondisi);
-        
+        RKS.setKondkipas((String) cbkipasanginkondisi.getSelectedItem());
         
         //AC
         label5 = new JLabel("Jml AC : ");
@@ -260,11 +263,12 @@ public class saranaruangkelas extends JPanel {
         cbAC.setLocation(250,140);
         cbAC.setSize(100,30);
         add(cbAC);
+        RKS.setPosAC((String) cbAC.getSelectedItem());
         cbACkondisi = new JComboBox(kondisi);
         cbACkondisi.setLocation(370,140);
         cbACkondisi.setSize(80,30);
         add(cbACkondisi);
-        
+        RKS.setKondAC((String) cbACkondisi.getSelectedItem());
         //CCTV
         label6 = new JLabel("Jml CCTV : ");
         label6.setLocation(20,175);
@@ -299,11 +303,12 @@ public class saranaruangkelas extends JPanel {
         cbCCTV.setLocation(250,170);
         cbCCTV.setSize(100,30);
         add(cbCCTV);
+        RKS.setPosCTV((String) cbCCTV.getSelectedItem());
         cbCCTVkondisi = new JComboBox(kondisi);
         cbCCTVkondisi.setLocation(370,170);
         cbCCTVkondisi.setSize(80,30);
         add(cbCCTVkondisi);
-        
+        RKS.setKondCTV((String) cbCCTVkondisi.getSelectedItem());
         
         //WIFI
         label7 = new JLabel("SSID");
@@ -326,7 +331,6 @@ public class saranaruangkelas extends JPanel {
         panelbg.setBackground(Color.white);
         panelbg.setBorder(BorderFactory.createTitledBorder(""));
 
-//        add(txt1);
         add(panelbg);
 
         setBackground(Color.white);
