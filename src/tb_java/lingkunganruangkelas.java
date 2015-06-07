@@ -36,7 +36,7 @@ public class lingkunganruangkelas extends JPanel{
     public lingkunganruangkelas(){
         
         keterangan = new JLabel("Keterangan: ");
-        keterangan.setLocation(355, 35);
+        keterangan.setLocation(365, 35);
         keterangan.setSize(keterangan.getPreferredSize());
         
         bersih = new JLabel("Bersih atau Kotor");
@@ -47,7 +47,7 @@ public class lingkunganruangkelas extends JPanel{
      llantai.setLocation(10,35);
      llantai.setSize(llantai.getPreferredSize());
      
-<<<<<<< HEAD
+
      ldinding = new JLabel("Kondisi dinding");
      ldinding.setLocation(10,75);
      ldinding.setSize(ldinding.getPreferredSize());
@@ -61,7 +61,7 @@ public class lingkunganruangkelas extends JPanel{
      lpintu.setSize(lpintu.getPreferredSize());
      
      ljendela = new JLabel("Kondisi jendela : ");
-=======
+
      ldinding = new JLabel("dinding : ");
      ldinding.setLocation(10,75);
      ldinding.setSize(ldinding.getPreferredSize());
@@ -75,7 +75,7 @@ public class lingkunganruangkelas extends JPanel{
      lpintu.setSize(lpintu.getPreferredSize());
      
      ljendela = new JLabel("jendela : ");
->>>>>>> Bayu Fajar Pratama
+
      ljendela.setLocation(10,195);
      ljendela.setSize(ljendela.getPreferredSize());
      
