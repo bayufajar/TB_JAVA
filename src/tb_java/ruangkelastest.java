@@ -12,7 +12,7 @@ public class ruangkelastest extends JFrame {
 
     private JTabbedPane tp;
     private JPanel panelbg;
-
+    LOGIN l = new LOGIN();
     public JButton buttonprocess;
     public JButton buttonedit;
     saranaruangkelas SRK = new saranaruangkelas();
@@ -25,7 +25,7 @@ public class ruangkelastest extends JFrame {
     ruangkelasetget RKS = new ruangkelasetget();
     hasil Hasil = new hasil();
     JFileChooser fc = new JFileChooser();
-
+    public JButton buttonlogin;
     public void init() {
 
         try {
@@ -129,6 +129,30 @@ public class ruangkelastest extends JFrame {
             }
         });
 
+           
+        buttonlogin = new JButton("LOGIN");
+        buttonlogin.setLocation(90,110);
+        buttonlogin.setSize(100,35);
+         l.add(buttonlogin);
+        buttonlogin.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+           if(l.txt1.getText().equals(l.username[0]) && l.psw1.getText().equals(l.password[0])){
+               getContentPane().removeAll();
+               new ruangkelastest().init();
+              
+               init();
+               l.revalidate();
+               l.repaint();
+           }
+            }
+        });
+        
+        
+        add(l);
+        l.setBounds(0,0,810,650);
+        
         buttonedit = new JButton("edit");
         buttonedit.setLocation(280, 550);
         buttonedit.setSize(100, 35);
@@ -137,6 +161,7 @@ public class ruangkelastest extends JFrame {
 
             @Override
             public void actionPerformed(ActionEvent ae) {
+                
                 getContentPane().removeAll();
                 init();
                 revalidate();

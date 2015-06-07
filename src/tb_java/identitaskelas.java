@@ -55,12 +55,12 @@ public class identitaskelas extends JPanel {
     gb.setBackground(Color.white);
     gb.setBorder(BorderFactory.createTitledBorder("identitas"));
     
-   
+    
     add(gb);
     setBackground(Color.white);
     setBorder(BorderFactory.createEtchedBorder());
     setLayout(null);
    
-
+    
     }
 }
